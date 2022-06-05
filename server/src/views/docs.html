@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Api Docs</title>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight"
+            >Vote Safe API Docs</span
+          >
+        </div>
+      </nav>
+      <table class="table-auto w-full mt-5 shadow">
+        <tbody>
+
+          <tr class="border-b-2">
+            <td class="px-4 py-2">
+              <button
+                class="
+                  bg-red-500
+                  hover:bg-red-700
+                  text-white
+                  font-bold
+                  py-2
+                  rounded
+                  w-20
+                "
+              >
+                DELETE
+              </button>
+            </td>
+            <td class="px-4 py-2 text-purple font-bold">/elections/{id}</td>
+            <td class="px-4 py-2 text-right">Delete election by id</td>
+          </tr>
+
+          <tr class="border-b-2">
+            <td class="px-4 py-2">
+              <button
+                class="
+                  bg-blue-500
+                  hover:bg-blue-700
+                  text-white
+                  font-bold
+                  py-2
+                  px-4
+                  rounded
+                  w-20
+                "
+              >
+                GET
+              </button>
+            </td>
+            <td class="px-4 py-2 text-purple font-bold">/elections</td>
+            <td class="px-4 py-2 text-right">Returns all active elections</td>
+          </tr>
+
+          <tr class="border-b-2">
+            <td class="px-4 py-2">
+              <button
+                class="
+                  bg-blue-500
+                  hover:bg-blue-700
+                  text-white
+                  font-bold
+                  py-2
+                  px-4
+                  rounded
+                  w-20
+                "
+              >
+                GET
+              </button>
+            </td>
+            <td class="px-4 py-2 text-purple font-bold">/user/me</td>
+            <td class="px-4 py-2 text-right">Requires a token, returns information about a user that is logged in</td>
+          </tr>
+
+          <tr class="border-b-2">
+            <td class="px-4 py-2">
+              <button
+                class="
+                  bg-blue-500
+                  hover:bg-blue-700
+                  text-white
+                  font-bold
+                  py-2
+                  px-4
+                  rounded
+                  w-20
+                "
+              >
+                GET
+              </button>
+            </td>
+            <td class="px-4 py-2 text-purple font-bold">/election/user</td>
+            <td class="px-4 py-2 text-right">Returns elections created by a user</td>
+          </tr>
+
+          <tr class="border-b-2">
+            <td class="px-4 py-2">
+              <button
+                class="
+                  bg-green-500
+                  hover:bg-green-700
+                  text-white
+                  font-bold
+                  py-2
+                  px-4
+                  rounded
+                  w-20
+                "
+              >
+                POST
+              </button>
+            </td>
+            <td class="px-4 py-2 text-purple font-bold">/sms/send-code</td>
+            <td class="px-4 py-2 text-right">Send verification code to user</td>
+          </tr>
+
+          <tr class="border-b-2">
+            <td class="px-4 py-2">
+              <button
+                class="
+                  bg-green-500
+                  hover:bg-green-700
+                  text-white
+                  font-bold
+                  py-2
+                  px-4
+                  rounded
+                  w-20
+                "
+              >
+                POST
+              </button>
+            </td>
+            <td class="px-4 py-2 text-purple font-bold">/sms/verify-code</td>
+            <td class="px-4 py-2 text-right">
+              Verify 6 digit code that the user provides
+            </td>
+          </tr>
+          
+          <tr class="border-b-2">
+            <td class="px-4 py-2">
+              <button
+                class="
+                  bg-green-500
+                  hover:bg-green-700
+                  text-white
+                  font-bold
+                  py-2
+                  px-4
+                  rounded
+                  w-20
+                "
+              >
+                POST
+              </button>
+            </td>
+            <td class="px-4 py-2 text-purple font-bold">/user/register</td>
+            <td class="px-4 py-2 text-right">Creates new user</td>
+          </tr>
+
+          <tr class="border-b-2">
+            <td class="px-4 py-2">
+              <button
+                class="
+                  bg-green-500
+                  hover:bg-green-700
+                  text-white
+                  font-bold
+                  py-2
+                  px-4
+                  rounded
+                  w-20
+                "
+              >
+                POST
+              </button>
+            </td>
+            <td class="px-4 py-2 text-purple font-bold">/user/login</td>
+            <td class="px-4 py-2 text-right">Allows a user to log in</td>
+          </tr>
+
+          <tr class="border-b-2">
+            <td class="px-4 py-2">
+              <button
+                class="
+                  bg-green-500
+                  hover:bg-green-700
+                  text-white
+                  font-bold
+                  py-2
+                  px-4
+                  rounded
+                  w-20
+                "
+              >
+                POST
+              </button>
+            </td>
+            <td class="px-4 py-2 text-purple font-bold">/invite/accept</td>
+            <td class="px-4 py-2 text-right">Registering for an election</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
